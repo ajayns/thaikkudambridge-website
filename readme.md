@@ -3,8 +3,11 @@
 This is a website for a popular South Indian band. 
 Preview: http://thaikkudambridge.tk/
 
+
+
+
+
 ### Tech
----
 This project uses:
 * Jquery
 *  Twitter Bootstrap
@@ -14,6 +17,5 @@ This project uses:
 
 
 ### Installation
----
 Just clone and run from your browser
 
