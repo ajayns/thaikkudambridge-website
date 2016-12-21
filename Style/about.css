@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.about-cover {
+    max-height: 240px;
+    overflow: hidden;
+    min-width: 320px;
+}
+
+.about-team a div img {
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.about-team a div.text-box {
+    text-shadow: 0 0 1px #000000;
+}
+
+.about-cover .about-quote {
+    min-width: 320px;
+    top: 10%;
+    left: 10px;
+    position: absolute;
+    overflow: hidden;
+    font-size: 28px;
+    opacity: 0.9;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width:540px) {
+    .about-cover {
+        max-height: 360px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width:450px) {
+    .about-cover .about-quote {
+        font-size: 21px;
+    }
+}
+
+p {
+    margin-bottom: 0%;
+}
+
+.text-muted {
+    font-size: 0.9em;
+}
+
+.about-team div {
+    padding: 3%;
+}

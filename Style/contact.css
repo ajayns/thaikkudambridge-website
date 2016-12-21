@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.footer {
+    height: auto !important;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.contact-cover {
+    overflow: hidden;
+    max-height: 180px;
+    min-width: 320px;
+}
+
+.contact-cover h1 {
+    min-width: 320px;
+    top: 10%;
+    left: 40%;
+    position: absolute;
+    color: white;
+    opacity: 0.9;
+    text-shadow: 0 0 3px #000000;
+}
+
+@media (max-width:720px) {
+    .contact-cover h1 {
+        display: none;
+    }
+}
+
+@media (max-width:990px) {
+    .footer {
+        position: static;
+        bottom: auto;
+    }
+}
+
+.contact-form,
+.contact-info {
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 430px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contact-info {
+    margin: 0 auto;
+}

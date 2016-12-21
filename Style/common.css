@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 320px;
+}
+
+@font-face {
+    font-family: TB;
+    src: url(../Fonts/Web-Serveroff.ttf);
+}
+
+body {
+    background-image: url(../Media/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    font-family: TB;
+}
+
+.navbar {
+    display: block;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 320px;
+    opacity: 0.9;
+    font-family: TB;
+}
+
+.navbar .navbar-brand {
+    font-size: 32px;
+    color: #9f4c46;
+}
+
+.navbar-right li {
+    font-size: 24px;
+}
+
+@media (max-width:640px) {
+    .navbar .navbar-brand {
+        font-size: 28px;
+    }
+}
+
+@media (min-width:1366px) {
+    .navbar .navbar-brand {
+        font-size: 36px;
+    }
+    .navbar-right li {
+        font-size: 28px;
+    }
+}
+
+@media (min-width:1600px) {
+    .navbar .navbar-brand {
+        font-size: 40px;
+    }
+    .navbar-right li {
+        font-size: 32px;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 92px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    font-family: "TB";
+}
+
+.social-links a img {
+    display: inline;
+    width: 48px;
+    padding: 5px;
+}
+
+.footer .footer-text {
+    padding: 5px;
+}
+
+.footer .footer-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-text,
+.social-links a img {
+    opacity: 0.6;
+}
+
+.footer .footer-text:hover,
+.social-links a img:hover {
+    opacity: 1;
+}
+
+.text-box {
+    color: #D7D7D7;
+    font-size: 24px;
+    padding: 3%;
+}
+
+h1 {
+    color: #9f4c46;
+    font-size: 4em;
+}
+
+.free-space {
+    height: 24px;
+    width: 100%;
+}

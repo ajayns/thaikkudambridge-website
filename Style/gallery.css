@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.gallery-cover {
+    overflow: hidden;
+    max-height: 180px;
+    min-width: 320px;
+    width: 100%;
+}
+
+.gallery-cover h1 {
+    min-width: 320px;
+    top: 10%;
+    left: 45%;
+    position: absolute;
+    color: white;
+    opacity: 0.9;
+    text-shadow: 0 0 5px #000000;
+}
+
+@media (max-width:580px) {
+    .gallery-cover h1 {
+        display: none;
+    }
+}
+
+.gallery-container h2 {
+    font-size: 2.5em;
+    color: white;
+    background: rgba(156, 66, 64, 0.9);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-thumbs div,
+.gallery-vids div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.gallery-thumbs div a img,
+.gallery-vids div a img {
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-thumbs img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.gallery-thumbs:hover img {
+    opacity: 0.3;
+}
+
+.gallery-thumbs img:hover {
+    opacity: 1;
+}
+
+.gallery-vids .col-xs-6 {
+    overflow: hidden;
+}
+
+.gallery-vids .col-xs-6 a .caption p:nth-child(2) {
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+.gallery-vids .col-xs-6 a .caption p {
+    padding: 0;
+    margin: 0 0;
+}
+
+.gallery-vids .col-xs-6 a .caption {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    height: 80px;
+    display: block;
+    opacity: 0;
+    top: -10%;
+    left: 10%;
+}
+
+.gallery-vids .col-xs-6:hover .caption {
+    opacity: 1;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+}
+
+.gallery-vids .col-xs-6 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.gallery-vids:hover .col-xs-6 {
+    opacity: 0.3;
+}
+
+.gallery-vids .col-xs-6:hover {
+    opacity: 1;
+}
+
+@media (max-width:990px) {
+    .gallery-vids .col-xs-6 a .caption {
+        height: 48px;
+        opacity: 1 !important;
+        top: 0 !important;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none;
+    }
+}
+
+@media (max-width:768px) {
+    .gallery-vids .col-xs-6 a .caption {
+        font-size: 1em;
+    }
+}
